@@ -12,7 +12,7 @@
 - [Not1MM](#not1mm)
   - [What and why is Not1MM](#what-and-why-is-not1mm)
   - [Current state](#current-state)
-  - [Our Contributors ✨](#our-contributors-)
+  - [Our Code Contributors ✨](#our-code-contributors-)
   - [List of should be working contests](#list-of-should-be-working-contests)
   - [Recent Changes](#recent-changes)
   - [Installing from PyPi](#installing-from-pypi)
@@ -88,7 +88,7 @@ The current state is "**BETA**". I've used it for A few contests, and was able t
 
 ![main screen](https://github.com/mbridak/not1mm/raw/master/pic/main.png)
 
-## Our Contributors ✨
+## Our Code Contributors ✨
 
 I wish to thank those who've contributed to the project.
 
@@ -116,10 +116,14 @@ I wish to thank those who've contributed to the project.
 - IARU HF
 - Japan International DX CW
 - Japan International DX SSB
+- NAQP CW
+- NAQP SSB
 - RAC Canada Day
 
 ## Recent Changes
 
+- [23-7-28] Added NAQP SSB and CW. Added optional move to next field with spacebar.
+- [23-7-27] Check if bandwidth returned is not a number.
 - [23-7-13] Add IARU HF contest.
 - [23-7-11] Add mode to logwindow. Highlight already worked calls in bandmap. Add FM and AM to Field Day, since I guess it's still a thing.
 - [23-7-5] Fix coredump in bandmap after CTRL-G.
