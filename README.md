@@ -122,6 +122,7 @@ I wish to thank those who've contributed to the project.
 
 ## Recent Changes
 
+- [23-7-29] Add YOUTH and YL overlay categories.
 - [23-7-28] Added NAQP SSB and CW. Added optional move to next field with spacebar.
 - [23-7-27] Check if bandwidth returned is not a number.
 - [23-7-13] Add IARU HF contest.
@@ -160,8 +161,6 @@ pipx install not1mm
 pipx ensurepath
 ```
 
-Open a new terminal and type `not1mm`
-
 #### Fedora 38
 
 ```bash
@@ -169,6 +168,9 @@ sudo dnf upgrade --refresh
 sudo dnf install python3-pip portaudio
 pip install not1mm
 ```
+
+You can now open a new terminal and type `not1mm`. On it's first run, it may or may not install a lovely non AI generated
+icon, which you can later click on to launch the application.
 
 ### You may or may not get a warning message like
 
