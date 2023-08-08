@@ -61,6 +61,8 @@
       - [Editing a contact](#editing-a-contact)
   - [Recalulate Mults](#recalulate-mults)
   - [Bandmap](#bandmap)
+  - [Check Window](#check-window)
+  - [VFO](#vfo)
   - [Cabrillo](#cabrillo)
   - [ADIF](#adif)
   - [Dupe checking](#dupe-checking)
@@ -122,13 +124,9 @@ I wish to thank those who've contributed to the project.
 
 ## Recent Changes
 
-- [23-7-29] Add YOUTH and YL overlay categories.
-- [23-7-28] Added NAQP SSB and CW. Added optional move to next field with spacebar.
-- [23-7-27] Check if bandwidth returned is not a number.
-- [23-7-13] Add IARU HF contest.
-- [23-7-11] Add mode to logwindow. Highlight already worked calls in bandmap. Add FM and AM to Field Day, since I guess it's still a thing.
-- [23-7-5] Fix coredump in bandmap after CTRL-G.
-- [23-7-2] bandmap now requests worked list at startup. Completed ARRL Field Day plugin.
+- [23-8-7] Control Remote Rig VFO with a bespoke USB VFO Knob.
+- [23-8-6] Add parsing of local log to check window.
+- [23-8-5] Add Check Window. Moved MASTER.SCP stuff to it's own class. Close sub windows when main app closes.
 
 See [CHANGELOG.md](CHANGELOG.md) for prior changes.
 
@@ -454,6 +452,23 @@ VFO indicator now displays as small triangle in the frequency tickmarks. A small
 ![Bandmap Window](https://github.com/mbridak/not1mm/raw/master/pic/VFO_and_bandwidth_markers.png)
 
 Clicked on spots now tune the radio and set the callsign field. Previously worked calls are displayed in red.
+
+## Check Window
+
+`Window`>`Check Window`
+
+As you enter a callsign, the Check Window will show probable matches to calls either in the MASTER.SCP file, or your local log. The MASTER.SCP column will show results for strings of 3 or more matching from the start of the call string. The local log column will show matches of any length appearing anywhere in the string.
+
+![Check Window](https://github.com/mbridak/not1mm/raw/master/pic/checkwindow.png)
+
+## VFO
+
+You can control the VFO on a remote rig by:
+
+1. Making the [VFO](https://github.com/mbridak/not1mm/blob/master/usb_vfo_knob/vfo.md)...
+2. Then... `Window`>`VFO`
+
+![VFO](https://github.com/mbridak/not1mm/raw/master/usb_vfo_knob/vfo.gif)
 
 ## Cabrillo
 
