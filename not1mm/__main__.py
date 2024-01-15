@@ -1115,7 +1115,7 @@ class MainWindow(QtWidgets.QMainWindow):
                 self.multicast_interface.send_as_json(cmd)
             return
         if (
-            event.key() == Qt.Key_W and modifier != Qt.AltModifier or event.key() == Qt.Key.Key_F11
+            event.key() == Qt.Key_W and modifier == Qt.AltModifier
         ):  # pylint: disable=no-member
             self.clearinputs()
             return
