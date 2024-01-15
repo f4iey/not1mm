@@ -1115,11 +1115,11 @@ class MainWindow(QtWidgets.QMainWindow):
                 self.multicast_interface.send_as_json(cmd)
             return
         if (
-            event.key() == Qt.Key.Key_Escape and modifier != Qt.ControlModifier
+            event.key() == Qt.Key_W and modifier == Qt.ControlModifier
         ):  # pylint: disable=no-member
             self.clearinputs()
             return
-        if event.key() == Qt.Key.Key_Escape and modifier == Qt.ControlModifier:
+        if event.key() == Qt.Key.Key_Escape:
             if self.cw is not None:
                 if self.cw.servertype == 1:
                     self.cw.sendcw("\x1b4")
